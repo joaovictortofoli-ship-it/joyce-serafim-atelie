@@ -1,12 +1,15 @@
 {
-  "buildCommand": "echo 'Build complete'",
+  "buildCommand": "echo 'Static site'",
   "outputDirectory": ".",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
 }
-
