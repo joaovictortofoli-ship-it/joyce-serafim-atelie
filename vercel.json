@@ -1,4 +1,7 @@
 {
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": ".",
+  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/(.*)",
@@ -6,3 +9,4 @@
     }
   ]
 }
+
